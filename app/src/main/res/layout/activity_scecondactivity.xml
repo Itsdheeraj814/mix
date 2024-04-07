@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scecondactivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="750sp"
+        android:src="@drawable/wood"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="What do you want in chicken menue :"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rditem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvquestion">
+
+        <RadioButton
+            android:id="@+id/rbck"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Chicken tikka" />
+
+        <RadioButton
+            android:id="@+id/rbcr"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Chicken rost" />
+
+        <RadioButton
+            android:id="@+id/rbcgl"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Chicken grill" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvextra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:padding="20dp"
+        android:text="what do you want in extra"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rditem" />
+
+    <CheckBox
+        android:id="@+id/chsalad"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:text="salad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvextra" />
+
+    <CheckBox
+        android:id="@+id/chtomat"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:text="tomato sause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chchill" />
+
+    <CheckBox
+        android:id="@+id/chchill"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:text="chilli sause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chsalad" />
+
+    <Button
+        android:id="@+id/btnorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chtomat" />
+
+    <TextView
+        android:id="@+id/tvorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnorder" />
+
+    <Button
+        android:id="@+id/btnconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
